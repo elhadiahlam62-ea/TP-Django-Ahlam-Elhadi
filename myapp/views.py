@@ -19,7 +19,6 @@ def register(request):
     if request.method == 'POST':
         user = request.POST['username']
         # ... récupération des autres champs ...
-        # (Pour gagner du temps, voici la logique simplifiée)
         if User.objects.filter(username=user).exists():
             messages.info(request, "L'utilisateur existe déjà")
             return redirect('register')
