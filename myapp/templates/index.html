@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP Django - Compteur de Mots</title>
+</head>
+<body>
+    <h1>Analyseur de Texte</h1>
+    <p>Entrez votre texte ci-dessous pour compter les mots :</p>
+
+    <form action="counter" method="POST">
+        {% csrf_token %}
+        <textarea name="text" rows="10" cols="60" placeholder="Écrivez quelque chose..."></textarea>
+        <br><br>
+        <button type="submit">Calculer le nombre de mots</button>
+    </form>
+</body>
+</html>

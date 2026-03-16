@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connexion</title>
+</head>
+<body>
+    <h1>Se connecter</h1>
+    <form action="login" method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Nom d'utilisateur"><br><br>
+        <input type="password" name="password" placeholder="Mot de passe"><br><br>
+        <button type="submit">Connexion</button>
+    </form>
+    
+    {% for message in messages %}
+        <p style="color: red;">{{message}}</p>
+    {% endfor %}
+</body>
+</html>
