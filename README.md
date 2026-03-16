@@ -14,4 +14,4 @@ Ce projet a été réalisé dans le cadre du TP de Django à la **FST de Tanger*
 4. Lancer les migrations : `python manage.py migrate`.
 5. Lancer le serveur : `python manage.py runserver`.
 
-**Auteur :** [EL HADI AHLAM]
+**Auteur :** EL HADI AHLAM
